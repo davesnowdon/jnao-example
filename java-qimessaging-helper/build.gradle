@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+repositories {
+   flatDir {
+       dirs '../android/HelloAndroid/libs/'
+   }
+}
+
+
+dependencies {
+   compile name: 'qimessaging-2.0.2.1-android'
+}
